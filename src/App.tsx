@@ -1,17 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router } from 'react-router-dom';
+
+import history from './services/history.js';
+import Routes from './routes'
+
+import GlobalStyle from './styles/global';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+    <Router history={history}>
+      <Routes />
+      <GlobalStyle />
+    </Router>
+    </>
   );
 }
 
