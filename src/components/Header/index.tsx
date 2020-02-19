@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 /* import { useDispatch, useSelector } from 'react-redux';
 import { signOut } from '~/store/modules/auth/actions'; */
-import { AppBar, Toolbar, IconButton } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Container, Content, Profile, ActiveLink, MenuResponsive } from './styles';
 import colors from '../../styles/colors';
@@ -37,15 +36,6 @@ function Header() {
 
     <Container>
       <Content>
-        {/* <MenuResponsive>
-          <AppBar position="static">
-            <Toolbar>
-              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-        </MenuResponsive> */}
         <nav>
           <ActiveLink to="/dashboard">
             <picture>
